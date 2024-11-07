@@ -1,0 +1,2 @@
+#FOR TESTS
+[tool.pytest.ini_options]

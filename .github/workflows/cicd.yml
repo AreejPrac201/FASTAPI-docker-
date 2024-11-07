@@ -30,7 +30,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flask
         pip install -r requirements.txt
-        pip install fastapi
+        pip install fastapi together
         pip install pytest
 
     - name: Run tests

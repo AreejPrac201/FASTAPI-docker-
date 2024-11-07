@@ -2,4 +2,4 @@ fastapi
 uvicorn
 together
 python-dotenv
-
+pytest

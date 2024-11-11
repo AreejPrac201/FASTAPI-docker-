@@ -1,7 +1,9 @@
+from fastapi.testclient import TestClient
 from app import app
 
-def test_home():
-    response=app.test_client().get("/")
+client = TestClient(app)
 
-    assert response.status_code==200
-    assert response.data== b"Hello World!"
+def test_home():
+    response = client.get("/")  # Use TestClient's get method
+    assert response.status_code == 200
+    assert response.json() == {"message": "Welcome to the FastAPI app. Use /ask to submit your query."}

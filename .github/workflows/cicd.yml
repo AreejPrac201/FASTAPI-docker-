@@ -37,7 +37,7 @@ jobs:
 
     - name: Run tests
       env:
-          TOGETHERAI_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
       run: |
         pytest
 
